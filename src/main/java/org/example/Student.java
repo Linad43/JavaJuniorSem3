@@ -1,5 +1,7 @@
 package org.example;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.*;
 
 /*
@@ -38,7 +40,7 @@ public class Student implements Serializable {
     public int getAge() {
         return age;
     }
-
+    @JsonIgnore
     public double getGPA() {
         return GPA;
     }
